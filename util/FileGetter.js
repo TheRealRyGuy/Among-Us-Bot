@@ -1,10 +1,10 @@
 //Reqs
 const fs = require("fs");
 //Not catching Util files for errors, take caution if used
-exports.getFiles = function getFiles(path) {
+exports.getFiles = path => {
   let results = [];
     const list = fs.readdirSync(path);
-    list.forEach(function(file) {
+    list.forEach(file => {
         file = path + '/' + file;
         file_type = file.split(".").pop();
         file_name = file.split(/(\\|\/)/g).pop();
@@ -17,8 +17,8 @@ exports.getFiles = function getFiles(path) {
     });
     return results;
 }
-exports.getSubDirs = function(path) {
-  return fs.readdirSync(path).filter(function (file) {
+exports.getSubDirs = path => {
+  return fs.readdirSync(path).filter(file => {
     return fs.statSync(path+'/'+file).isDirectory();
   });
 }

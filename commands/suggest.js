@@ -13,7 +13,7 @@ module.exports = {
         message.channel.send(new Discord.MessageEmbed()
             .setTitle(":white_check_mark: Success !!!")
             .setDescription(`Suggestion sent in: \`${msg}\``)
-            .setFooter("third imposters -_-")
+            .setFooter(client.util.grabFooterText())
             .setTimestamp()
             .setColor([0, 255, 0])
         );
@@ -22,7 +22,7 @@ module.exports = {
             channel.send(new Discord.MessageEmbed()
                 .setTitle("Suggestion from " + message.author.tag)
                 .setDescription(`Suggestion: \`${msg}\``)
-                .setFooter("third imposters -_-")
+                .setFooter(client.util.grabFooterText())
                 .setColor([0, 0, 255])
             );
         });

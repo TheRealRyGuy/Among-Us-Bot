@@ -1,0 +1,27 @@
+[
+	{
+		"name": "The Skeld",
+		"commons": [
+			"Wires",
+			"Card Swipe"
+		],
+		"mapimg": "http://ryguy.me/assets/skeld.jpg"
+	},
+	{
+			"name": "Mira HQ",
+			"commons": [
+				"Wires",
+				"Enter ID Code"
+			],
+			"mapimg": "http://ryguy.me/assets/mira.png"
+	},
+	{
+		"name": "Polus",
+		"commons": [
+			"Wires",
+			"Keys",
+			"Boarding Pass"
+		],
+		"mapimg": "http://ryguy.me/assets/polus.png"
+	}		
+]
